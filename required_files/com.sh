@@ -30,4 +30,4 @@ rm -r $user_output_directory
 mkdir $user_output_directory
 hadoop fs -get /user/outdir4/part-r-00000 $user_output_directory
 mv $user_output_directory/part-r-00000 $user_output_directory/output.txt
-echo "Output File created at :$2/output.txt"
+echo "Output File created at :$user_output_directory/output.txt"
